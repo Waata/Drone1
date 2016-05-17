@@ -1,20 +1,31 @@
 <!doctype html>
 <html>
-  <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta charset="utf-8">
-    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<head>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <meta charset="utf-8">
+  <title>Landing page for Drone1</title>
+  <meta name="description" content="Drone1 " />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Codeply">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+  <!-- Use title if it's in the page YAML frontmatter -->
+  <title><%= current_page.data.title || "Middleman" %></title>
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+  <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag :site %>
+  <%= javascript_include_tag :all %>
+</head>
 
-    <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
-  </head>
-
-  <body class="<%= page_classes %>">
-    <%= yield %>
-  </body>
+<body class="<%= page_classes %>">
+  <%= yield %>
+</body>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+      
 </html>
+
