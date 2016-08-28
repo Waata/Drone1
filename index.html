@@ -32,19 +32,23 @@
       </button>
       <a class="navbar-brand page-scroll" href="#first">
         <div class= "navbar-brand"> 
-<a href="#">          <img src="images/Drone1-typo-large.png" alt="Drone1 typo large">
-</a>        </div>
+          <a class="page-scroll" data-toggle="modal"  href="#aboutModal"><img src="images/Drone1-typo-large.png" alt="Drone1 typo large"></a>
+        </div>
       </a>
     </div>
     <div class="navbar-collapse collapse" id="bs-navbar">
       <ul class="nav navbar-nav">
-        <li>
-          <a class="page-scroll" data-toggle="modal" title="B" href="#contactModal">Contact</a>
-        </li>
-      </ul>
+       <li>
+        <!--         <a class="page-scroll" data-toggle="modal" title="A" href="#aboutModal">Het Team</a>-->    
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a class="page-scroll" data-toggle="modal" title="B" href="#contactModal">Contact</a>
+      </li>
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a class="page-scroll" data-toggle="modal" title="A" href="#aboutModal">Over ons</a>
+          <a class="page-scroll" data-toggle="modal" title="C" href="#passionModal" style="margin-right: 50px;" >Onze Passie</a>
         </li>
       </ul>
     </div>
@@ -54,59 +58,80 @@
   <div class="header-content">
     <div class="inner">
       <div class="landing-logo">
-<a href="#">        <img src="images/Drone1-logo-large.png" alt="Drone1 typo large">
-</a>      </div>
-     <h4>Best drone footage</h4> 
+      <img src="images/Drone1-logo-large.png" alt="Drone1 typo large">
+      </div>
+      <h4>Best drone footage</h4> 
       <hr>
-<!--       <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">pause video</a> &nbsp; <a href="#last" class="btn btn-primary btn-xl page-scroll">Contact</a> -->
+      <!--  <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">pause video</a> &nbsp; <a href="#last" class="btn btn-primary btn-xl page-scroll">Contact</a> -->
     </div>
   </div>
-  <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
-    <source src="https://static.videezy.com/system/resources/previews/000/002/312/original/drone-test-windy-hd-stock-video.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
-    </video>
-  </header>
-  <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <h2 class="text-center">
-            <img src="images/Drone1-logo-large.png"></h2>
-            <h5 class="text-center">
-              The best Drone footage shot by a pro
-            </h5>
-            <p class="text-justify">
-            Informatie volgt.
-            </p>
-            <br/>
-            <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
-            <br>
-          </div>
-        </div>
-      </div>
-    </div>
-      <div id="contactModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <h2 class="text-center">
-            <img src="images/Drone1-logo-large.png"></h2>
-            <h5 class="text-center">
-              Contact
-            </h5>
-            <p class="text-center">
-                 <a href="http://www.mediaholic.nl" target="_blank">Mediaholic</a> 
-                 <!-- <a href="http://www.mediaholic.com" target="_blank">Mediaholic</a> --> 
-            </p>
-            <br/>
-            <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
-            <br>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <a href="http://www.stekweb.nl" target="_blank"></a> 
- 
+  <!--   Video URL -->  
+
+  <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
+
+  <!--   Video URL -->  
+  <source src="https://static.videezy.com/system/resources/previews/000/002/312/original/drone-test-windy-hd-stock-video.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+  </video>
+</header>
+<div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h2 class="text-center pad20">
+          <img src="images/Drone1-logo-large.png"></h2>
+          <h5 class="text-center">
+            We hebben jarenlange ervaring met het maken van bedrijfsfilms en zijn sinds een jaar volop bezig met onze drone. Puur uit fascinatie voor mooi luchtbeeld! En om ervaring op te bouwen. Daarom helpen we je graag om je terrein, object of voorstelling in beeld te brengen. Neem gerust contact op!            </h5>
+            <p class="text-justify">
+            </p>
+            <br/>
+            <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contactModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h2 class="text-center pad20">
+              <img src="images/Drone1-logo-large.png"></h2>
+              <h5 class="text-center">
+                contact@drone1.nl -- Wij doen dit - voor de lol - naast ons werk zodat het enkele uren kan duren voordat je, gegarandeerd, antwoord krijgt.
+              </h5>
+              <p class="text-center">
+               <a href="http://www.mediaholic.nl" target="_blank">Mediaholic</a> 
+               <!-- <a href="http://www.mediaholic.com" target="_blank">Mediaholic</a> --> 
+             </p>
+             <br/>
+             <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
+             <br>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div id="passionModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h2 class="text-center pad20">
+              <img src="images/Drone1-logo-large.png"></h2>
+              <h5 class="text-center">
+                Het team van Drone1 maakt de mooiste drone-beelden van uw terrein, object of voorstelling. U zult het nog nooit zo mooi in beeld hebben gezien want wij gaan het van alle kanten uitgebreid in beeld brengen! Uiteraard in haarscherp HD of 4K om het zo mooi mogelijk te maken.
+              </h5>
+              <p class="text-center">
+               <a href="http://www.mediaholic.nl" target="_blank">Mediaholic</a> 
+               <!-- <a href="http://www.mediaholic.com" target="_blank">Mediaholic</a> --> 
+             </p>
+             <br/>
+             <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
+             <br>
+           </div>
+         </div>
+       </div>
+     </div>
+     <a href="http://www.stekweb.nl" target="_blank"></a> 
 </body>
  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
