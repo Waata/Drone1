@@ -12,7 +12,7 @@ body {
 
 body {
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
-    background-color: #282828;
+    background-color: #040404;
     color: #d3d3d3;
     webkit-tap-highlight-color: #222;
 }
@@ -30,7 +30,7 @@ hr.light {
 }
 
 a {
-    color: #9c27b0;
+    
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -40,6 +40,7 @@ a:hover,
 a:focus {
     color: #9c27c1;
     outline: 0;
+    text-decoration: none;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -50,6 +51,12 @@ p {
     font-size: 17px;
     line-height: 1.7;
     margin-bottom: 20px;
+}
+
+
+.pad20 {
+     padding-bottom: 20px;
+
 }
 
 .wide-space {
@@ -93,7 +100,7 @@ p {
 
 .landing-logo {
     opacity: 0.6;
-    zoom: 250%;
+    zoom: 100%;
 }
 
 section {
@@ -284,6 +291,10 @@ footer {
 @media(min-width:768px) {
     .icon-lg {
         font-size: 80px;
+    }
+    .landing-logo {
+    opacity: 0.7;
+    zoom: 250%;
     }
     
     header {
